@@ -1,0 +1,15 @@
+#navbar {
+    background: #f9f9f9;
+    position: inherit;
+    top: 0;
+    width: 100%;
+    z-index: 1071;
+    height: 2.4rem;
+    padding: 1rem 0 0 10.5rem;
+}
+
+#navbar .page-title {
+    color: #9f9f9f;
+    font-weight: 600;
+    text-transform: capitalize;
+}

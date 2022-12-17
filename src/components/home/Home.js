@@ -1,9 +1,11 @@
 import Navbar from './../navbar/Navbar';
 import Sidebar from './../sidebar/Sidebar';
 
+import "./Home.css";
+
 function Home() {
   return (
-    <div className="Home">
+    <div id="Home">
         <Navbar />
         <Sidebar />
     </div>

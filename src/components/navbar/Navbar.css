@@ -4,12 +4,39 @@
     top: 0;
     width: 100%;
     z-index: 1071;
-    height: 2.4rem;
-    padding: 1rem 0 0 10.5rem;
+    height: 2.8em;
+    padding: 0.8rem 0 0 10.5rem;
+    display: flex;
 }
 
 #navbar .page-title {
     color: #9f9f9f;
     font-weight: 600;
     text-transform: capitalize;
+}
+
+.hamburger {
+    display: none;
+}
+
+#close-sidebar {
+    position: absolute;
+    transition: all 0.33s ease;
+    left: -100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        padding: 0.5rem 0 0 1rem;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    #close-sidebar {
+        left: -100%;
+        margin-left: 9rem;
+    }
 }

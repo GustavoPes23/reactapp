@@ -12,13 +12,14 @@
 
 input[type="text"],
 input[type="password"] {
-  height: 25px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.7rem;
   padding: 0 0.3rem 0 0.3rem;
   background: #e6e6e6;
   border-color: #fff;
   margin-left: -2rem;
+  width: 13rem;
+  height: 2rem;
 }
 
 input[type="text"]::placeholder,
@@ -51,8 +52,8 @@ input[type="submit"]:hover {
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0.4rem;
-  width: 11rem;
-  height: 11rem;
+  width: 17rem;
+  height: 17rem;
 }
 
 .list-container {
@@ -78,7 +79,7 @@ input[type="submit"]:hover {
 
 .form-icon {
   position: sticky;
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
   color: #666
 }
 

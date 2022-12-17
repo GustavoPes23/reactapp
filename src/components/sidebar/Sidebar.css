@@ -5,7 +5,8 @@
     width: 8rem;
     height: 100%;
     background: #f9f9f9;
-    padding: 1rem 0 0 2rem;
+    padding: 1rem 0 0 1.5rem;
+    transition: all 0.33s ease;
 }
 
 #sidebar .icon-logo {
@@ -43,4 +44,14 @@
 
 .list-items .sidebar-item-icon {
     margin-right: 0.4rem;
+}
+
+.left-to-right-slide {
+    left: 0.1%!important;
+}
+
+@media only screen and (max-width: 600px) {
+    #sidebar {
+        left: -100%;
+    }
 }

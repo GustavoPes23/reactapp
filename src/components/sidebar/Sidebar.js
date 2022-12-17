@@ -1,8 +1,11 @@
 import logo from './logo.png';
 import { BsHouse, BsBagCheck, BsPerson, BsDoorOpen } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import "./Sidebar.css";
+import ModalDialog from './ModalDialog';
+
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -19,7 +22,7 @@ const Sidebar = () => {
     { id: 4, title: 'Sair', icon: <BsDoorOpen />, link: '/login', subitem: [] },
   ];
 
-  function titleCase(string){
+  const titleCase = (string) => {
     return string[0].toUpperCase() + string.slice(1).toLowerCase();
   }
 
@@ -29,7 +32,7 @@ const Sidebar = () => {
 
   const listItems = sidebarItems.map((sidebarItem) =>
     <li key={sidebarItem.id}>
-      <a onClick={() => navigate(sidebarItem.link)} className={currentPage == sidebarItem.title ? 'sidebar-item active' : 'sidebar-item'}>
+      <a onClick={() => sidebarItem.title == 'Sair' ? navigate(sidebarItem.link) : navigate(sidebarItem.link)} className={currentPage == sidebarItem.title ? 'sidebar-item active' : 'sidebar-item'}>
         <span className="sidebar-item-icon">{sidebarItem.icon}</span>
         <span>{sidebarItem.title}</span>
       </a>
@@ -39,7 +42,7 @@ const Sidebar = () => {
   return (
     <>
       <div id="sidebar">
-        <a href="/" className="icon-logo">
+        <a href="./" className="icon-logo">
           <img src={logo} className="logo-sidebar" />
         </a>
         <ul className="list-items">

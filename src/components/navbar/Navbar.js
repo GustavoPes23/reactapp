@@ -1,5 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
+import { BsPerson } from "react-icons/bs";
+
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -37,6 +39,7 @@ const Navbar = () => {
                     {currentPage}
                 </span>
                 <div id="close-sidebar" onClick={hideSideBar}><AiOutlineClose /></div>
+              
             </div>
         </>
     );

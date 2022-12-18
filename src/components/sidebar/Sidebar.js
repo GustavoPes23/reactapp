@@ -13,12 +13,12 @@ const Sidebar = () => {
   const sidebarItems = [
     { id: 1, title: 'Home', icon: <BsHouse />, link: '/', subitem: [] },
     {
-      id: 2, title: 'Pedidos', icon: <BsBagCheck />, link: './pedidos', subitem: [
-        { id: 21, title: 'Novo pedido', icon: <BsBagCheck />, link: './novo-pedido' },
-        { id: 22, title: 'Meus pedidos', icon: <BsBagCheck />, link: './meus-pedidos' },
+      id: 2, title: 'Pedidos', icon: <BsBagCheck />, link: '/pedidos', subitem: [
+        { id: 21, title: 'Novo pedido', icon: <BsBagCheck />, link: '/novo-pedido' },
+        { id: 22, title: 'Meus pedidos', icon: <BsBagCheck />, link: '/meus-pedidos' },
       ]
     },
-    { id: 3, title: 'Conta', icon: <BsPerson />, link: './conta', subitem: [] },
+    { id: 3, title: 'Conta', icon: <BsPerson />, link: '/conta', subitem: [] },
     { id: 4, title: 'Sair', icon: <BsDoorOpen />, link: '/login', subitem: [] },
   ];
 
@@ -42,7 +42,7 @@ const Sidebar = () => {
   return (
     <>
       <div id="sidebar">
-        <a href="./" className="icon-logo">
+        <a href="/" className="icon-logo">
           <img src={logo} className="logo-sidebar" />
         </a>
         <ul className="list-items">

@@ -1,5 +1,5 @@
 #navbar {
-    background: #f9f9f9;
+    background: transparent;
     position: inherit;
     top: 0;
     width: 100%;
@@ -10,24 +10,30 @@
 }
 
 #navbar .page-title {
-    color: #9f9f9f;
+    color: #fff;
     font-weight: 600;
     text-transform: capitalize;
 }
 
 .hamburger {
     display: none;
+    color: #fff;
 }
 
 #close-sidebar {
     position: absolute;
     transition: all 0.33s ease;
     left: -100%;
+    color: #fff;
+}
+
+.account-navbar {
+    
 }
 
 @media only screen and (max-width: 600px) {
     #navbar {
-        padding: 0.5rem 0 0 1rem;
+        padding: 0.6rem 0 0 1rem;
     }
 
     .hamburger {
@@ -37,6 +43,6 @@
 
     #close-sidebar {
         left: -100%;
-        margin-left: 9rem;
+        margin-left: 9.5rem;
     }
 }

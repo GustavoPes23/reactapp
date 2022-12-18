@@ -13,12 +13,11 @@
 input[type="text"],
 input[type="password"] {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.7rem;
-  padding: 0 0.3rem 0 0.3rem;
+  border-radius: 0 0.7rem 0.7rem 0;
   background: #e6e6e6;
-  border-color: #fff;
-  margin-left: -2rem;
-  width: 13rem;
+  border-color: transparent;
+  margin-left: -0.5rem;
+  width: 10.8rem;
   height: 2rem;
 }
 
@@ -26,6 +25,7 @@ input[type="text"]::placeholder,
 input[type="password"]::placeholder {
   padding-left: 2rem;
 }
+
 
 input[type="submit"] {
   margin-top: 10px;
@@ -78,9 +78,17 @@ input[type="submit"]:hover {
 }
 
 .form-icon {
-  position: sticky;
-  margin-top: 0.2rem;
-  color: #666
+  position: sticky; 
+    color: #666;
+    background-color: #e6e6e6;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.7rem 0 0 0.7rem;
+    padding: 0.2rem;
+}
+
+.focus {
+  border-color: #000;
 }
 
 * {

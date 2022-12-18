@@ -68,21 +68,25 @@ function Login() {
         <div className="error">{errorMessages.message}</div>
     );
 
-    function handleChange(event) {
-        console.log(event.placeholder);
+    function handleChangeFocusEmail() {
+        const iconEmail = document.getElementById('icon-email');
+        //iconEmail.style.setProperty('display', 'none');
+
+        iconEmail.classList.add('focus');
+ 
     }
 
     const renderForm = (
         <div className="form">
             <form onSubmit={handleSubmit}>
                 <div className="input-container">
-                    <span className="form-icon"><MdOutlineEmail /></span>
-                    <input type="text" name="username" required placeholder="Usuário" onClick={handleChange}/>
+                    <span className="form-icon" id="icon-email"><MdOutlineEmail /></span>
+                    <input type="text" name="username" required placeholder="Usuário" onClick={handleChangeFocusEmail}/>
                     {renderErrorMessage("username")}
                 </div>
                 <div className="input-container">
-                    <span className="form-icon"><MdLockOutline /></span>
-                    <input type="password" name="password" required placeholder="Senha" />
+                    <span className="form-icon" id="icon-password"><MdLockOutline /></span>
+                    <input type="password" name="password" required placeholder="Senha"/>
                     {renderErrorMessage("password")}
                 </div>
                 <div className="button-container">

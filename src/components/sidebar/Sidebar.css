@@ -3,7 +3,9 @@
     top: 0;
     left: 0;
     width: 8rem;
-    height: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 0.4rem;
     background: #f9f9f9;
     padding: 1rem 0 0 1.5rem;
     transition: all 0.33s ease;
